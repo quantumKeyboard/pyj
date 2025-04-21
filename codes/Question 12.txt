@@ -1,0 +1,22 @@
+# Base class
+class Grandfather:
+    def show_grandfather(self):
+        print("Grandfather: I love farming.")
+
+# Derived class from Grandfather
+class Father(Grandfather):
+    def show_father(self):
+        print("Father: I am a teacher.")
+
+# Derived class from Father
+class Son(Father):
+    def show_son(self):
+        print("Son: I am a student.")
+
+# Create object of Son class
+s = Son()
+
+# Call methods from all levels of inheritance
+s.show_grandfather()
+s.show_father()
+s.show_son()

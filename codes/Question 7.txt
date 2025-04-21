@@ -1,0 +1,62 @@
+# Python program to implement constructor overriding
+
+# Parent class
+class Vehicle:
+    def __init__(self):
+        print("Vehicle constructor called")
+        self.type = "Generic Vehicle"
+        self.wheels = 0
+        self.color = "Unknown"
+    
+    def display_info(self):
+        print(f"Vehicle Type: {self.type}")
+        print(f"Number of Wheels: {self.wheels}")
+        print(f"Color: {self.color}")
+
+
+# Child class overriding parent's constructor
+class Car(Vehicle):
+    def __init__(self):
+        print("Car constructor called")
+        # Not calling parent constructor
+        self.type = "Car"
+        self.wheels = 4
+        self.color = "White"
+        self.seats = 5
+    
+    def display_info(self):
+        print(f"Vehicle Type: {self.type}")
+        print(f"Number of Wheels: {self.wheels}")
+        print(f"Color: {self.color}")
+        print(f"Number of Seats: {self.seats}")
+
+
+# Child class using parent's constructor and extending it
+class Motorcycle(Vehicle):
+    def __init__(self):
+        # First call parent's constructor
+        super().__init__()
+        print("Motorcycle constructor called")
+        # Then override some properties
+        self.type = "Motorcycle"
+        self.wheels = 2
+        # Add new properties
+        self.has_sidecar = False
+    
+    def display_info(self):
+        super().display_info()
+        print(f"Has Sidecar: {self.has_sidecar}")
+
+
+# Create objects and test
+print("Creating a Vehicle object:")
+vehicle = Vehicle()
+vehicle.display_info()
+
+print("\nCreating a Car object:")
+car = Car()
+car.display_info()
+
+print("\nCreating a Motorcycle object:")
+motorcycle = Motorcycle()
+motorcycle.display_info()

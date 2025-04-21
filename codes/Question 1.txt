@@ -1,0 +1,14 @@
+# Program to display calendar of given month using Calendar module
+import calendar
+
+def display_calendar():
+    # Get user input for year and month
+    year = int(input("Enter year: "))
+    month = int(input("Enter month (1-12): "))
+    
+    # Display the calendar
+    print("\nCalendar for", calendar.month_name[month], year)
+    print(calendar.month(year, month))
+
+# Call the function
+display_calendar()

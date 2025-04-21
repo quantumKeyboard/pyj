@@ -1,0 +1,23 @@
+# Base class 1
+class Father:
+    def skills(self):
+        print("Father's skills: Gardening, Driving")
+
+# Base class 2
+class Mother:
+    def skills(self):
+        print("Mother's skills: Cooking, Painting")
+
+# Derived class using multiple inheritance
+class Child(Father, Mother):
+    def show_skills(self):
+        # Call skills from both parents
+        Father.skills(self)
+        Mother.skills(self)
+        print("Child's skills: Programming, Dancing")
+
+# Create object of Child class
+c = Child()
+
+# Call method to display skills
+c.show_skills()

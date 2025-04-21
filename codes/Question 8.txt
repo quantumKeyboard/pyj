@@ -1,0 +1,33 @@
+# Python program to calculate area of square and rectangle using method overloading
+
+class Shape:
+    # Method to calculate area with different parameter counts
+    def area(self, *args):
+        # If one parameter is passed, calculate square area
+        if len(args) == 1:
+            side = args[0]
+            area = side * side
+            print(f"Area of Square with side {side} = {area} square units")
+        
+        # If two parameters are passed, calculate rectangle area
+        elif len(args) == 2:
+            length, breadth = args
+            area = length * breadth
+            print(f"Area of Rectangle with length {length} and breadth {breadth} = {area} square units")
+        
+        # If invalid number of parameters are passed
+        else:
+            print("Invalid number of parameters")
+
+# Create an object of Shape class
+shape = Shape()
+
+# Calculate area of square
+shape.area(5)
+
+# Calculate area of rectangle
+shape.area(4, 6)
+
+# Try with invalid number of parameters
+shape.area()
+shape.area(2, 3, 4)

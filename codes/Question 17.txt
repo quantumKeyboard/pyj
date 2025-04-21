@@ -1,0 +1,14 @@
+# Import tkinter module
+import tkinter as tk
+
+# Create the main window
+window = tk.Tk()
+
+# Set the title of the window
+window.title("My First Tkinter Window")
+
+# Set window size (optional)
+window.geometry("300x200")
+
+# Run the application (event loop)
+window.mainloop()

@@ -1,0 +1,24 @@
+# Python program to implement a constructor
+
+class Student:
+    # Constructor (initializer method)
+    def __init__(self):
+        print("Constructor called when object is created")
+        self.name = "Unknown"
+        self.roll_number = 0
+        self.marks = 0
+    
+    # Method to display student information
+    def display_info(self):
+        print(f"Student Name: {self.name}")
+        print(f"Roll Number: {self.roll_number}")
+        print(f"Marks: {self.marks}")
+
+# Creating objects of the Student class
+print("Creating first student object...")
+student1 = Student()  # Constructor is automatically called
+student1.display_info()
+
+print("\nCreating second student object...")
+student2 = Student()  # Constructor is automatically called
+student2.display_info()

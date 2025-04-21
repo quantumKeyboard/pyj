@@ -1,0 +1,12 @@
+# Import pandas module
+import pandas as pd
+
+# Create a list
+my_list = [5, 10, 15, 20, 25]
+
+# Convert list into a pandas Series
+series = pd.Series(my_list)
+
+# Display the Series
+print("Pandas Series created from list:")
+print(series)

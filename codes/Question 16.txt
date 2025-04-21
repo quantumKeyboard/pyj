@@ -1,0 +1,20 @@
+import pandas as pd
+
+data_list = [['Amit', 20], ['Sneha', 21], ['Rahul', 22]]
+
+# Create DataFrame
+df_list = pd.DataFrame(data_list, columns=['Name', 'Age'])
+
+print("DataFrame from List:")
+print(df_list)
+
+data_dict = {
+    'Name': ['Amit', 'Sneha', 'Rahul'],
+    'Age': [20, 21, 22]
+}
+
+# Create DataFrame
+df_dict = pd.DataFrame(data_dict)
+
+print("\nDataFrame from Dictionary:")
+print(df_dict)

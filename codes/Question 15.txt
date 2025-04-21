@@ -1,0 +1,17 @@
+# Import pandas module
+import pandas as pd
+
+# Create a Series
+numbers = pd.Series([100, 200, 300, 400, 500])
+
+# Display the entire Series
+print("Pandas Series:")
+print(numbers)
+
+# Access single element by index
+print("\nElement at index 2:")
+print(numbers[2])
+
+# Access multiple elements using slicing
+print("\nElements from index 1 to 3:")
+print(numbers[1:4])

@@ -1,0 +1,63 @@
+# Python program to read and print student information using single inheritance
+
+# Parent class for person information
+class Person:
+    def __init__(self):
+        self.name = ""
+        self.age = 0
+        self.gender = ""
+    
+    def input_person_info(self):
+        print("\nEnter Person Details:")
+        self.name = input("Enter Name: ")
+        self.age = int(input("Enter Age: "))
+        self.gender = input("Enter Gender (M/F): ")
+    
+    def display_person_info(self):
+        print("\nPerson Information:")
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Gender: {self.gender}")
+
+# Child class inheriting from Person
+class Student(Person):
+    def __init__(self):
+        # Initialize parent class attributes
+        super().__init__()
+        # Initialize student-specific attributes
+        self.roll_number = ""
+        self.course = ""
+        self.marks = 0
+    
+    def input_student_info(self):
+        # Get person details first by calling parent method
+        self.input_person_info()
+        
+        # Get student-specific details
+        print("\nEnter Student Details:")
+        self.roll_number = input("Enter Roll Number: ")
+        self.course = input("Enter Course: ")
+        self.marks = float(input("Enter Marks: "))
+    
+    def display_student_info(self):
+        # Display person details first by calling parent method
+        self.display_person_info()
+        
+        # Display student-specific details
+        print("\nStudent Information:")
+        print(f"Roll Number: {self.roll_number}")
+        print(f"Course: {self.course}")
+        print(f"Marks: {self.marks}")
+
+# Main program
+if __name__ == "__main__":
+    # Create a student object
+    student = Student()
+    
+    # Input student information
+    print("Enter Student Information")
+    student.input_student_info()
+    
+    # Display student information
+    print("\n----- STUDENT DETAILS -----")
+    student.display_student_info()

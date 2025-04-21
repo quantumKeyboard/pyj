@@ -1,0 +1,31 @@
+# Python program to demonstrate inheritance and method overriding
+
+# Parent class
+class Degree:
+    def getDegree(self):
+        print("I got a degree")
+
+# Subclass 1
+class Undergraduate(Degree):
+    def getDegree(self):
+        print("I am an Undergraduate")
+
+# Subclass 2
+class Postgraduate(Degree):
+    def getDegree(self):
+        print("I am a Postgraduate")
+
+# Create objects of all three classes
+degree = Degree()
+undergraduate = Undergraduate()
+postgraduate = Postgraduate()
+
+# Call getDegree method for each object
+print("Calling getDegree method from Degree class:")
+degree.getDegree()
+
+print("\nCalling getDegree method from Undergraduate class:")
+undergraduate.getDegree()
+
+print("\nCalling getDegree method from Postgraduate class:")
+postgraduate.getDegree()

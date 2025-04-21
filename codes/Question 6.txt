@@ -1,0 +1,24 @@
+# Python program to implement a parameterized constructor
+
+class Employee:
+    # Parameterized constructor
+    def __init__(self, name, emp_id, salary):
+        print("Parameterized Constructor called")
+        self.name = name
+        self.emp_id = emp_id
+        self.salary = salary
+    
+    # Method to display employee information
+    def display_info(self):
+        print(f"Employee Name: {self.name}")
+        print(f"Employee ID: {self.emp_id}")
+        print(f"Salary: Rs. {self.salary}")
+
+# Creating objects with different parameters
+print("Creating first employee object...")
+emp1 = Employee("Rahul Sharma", "E001", 45000)
+emp1.display_info()
+
+print("\nCreating second employee object...")
+emp2 = Employee("Priya Patel", "E002", 50000)
+emp2.display_info()
