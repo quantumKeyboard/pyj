@@ -1,36 +1,76 @@
-1] Write a Python program to display calendar of given month using Calendar module.
+1. Write a program using  different Bitwise operators in Python
+2. Write a program using  different logical operators in Python 
+3. Write a program to swap the value of two variables.
+4. Write a program to calculate surface volume and area of a cylinder.
+5. Write a program to check the largest number among the three numbers
+6. Write a program to check if the input year is a leap year of not 
+7. Write a program to check if a Number is Positive, Negative or Zero 
+8. Write a program that takes the marks of 5 subjects and displays the grades.
+9. The following program uses a nested for loop to find the prime numbers from 2 to 100
+10. Write a Python program that takes a number and checks whether it is a palindrome or not.
+11. Write a Python program to print all even numbers between 1 to 100 using while loop.
+12. Print the following patterns using loop:
+	1010101
+	  101
+	   1
+13. Print the following patterns using loop: 
+	     *
+	    ***
+       *****
+        ***
+	     *
 
-2] Write a python program to calculate area of circle using inbuilt Math module.
+14. Write a Python Program to Reverse a given number  by using loop.
+15. Write a python program to find Factorial of given number.
+16. Write a python program to find Fibonacci series for given number.
+17. Find sum of four digit number using loop.
+18. Write program to demonstrate use of nested if-else.
+19. Write a program the use different list Functions.
+20. Write a program 'for a method to reverse a list.
+21. Write a Python program to find common items from two lists.
+22. Write a Python program to sort a list.
+23. Write program to copy specific elements existing tuple into new tuple.
+24. Create a tuple and find the minimum and maximum number from it.
+25. Write a Python program to find the repeated items of a tuple.
+26. Write a program on  the various set operations.
+27. Write a Python program to create a set, add member(s) in a set and remove one item from set.
+28. Write a Python program to find maximum and the minimum value in a set.
+29. Write a Python program to find the length of a set.
+30. Write a Python program to perform following operations on set: intersection of sets,union of sets, set difference, symmetric difference, clear a set.
+31. Write a Python script to sort (ascending and descending) a dictionary by value.
+32. Write a Python script to concatenate following dictionaries to create a new one.
+	Sample Dictionary:
+	dic1 = {1:10, 2:20}
+	dic2 = {3:30, 4:40}
+	dic3 = {5:50,6:60}
 
-3] Create your own package in Python
-
-4] Write a program on  constructor overloading in Python.
-
-5] Write a python program to implement constructor.
-
-6] Write a python program to implement parameterized constructor.
-
-7] Write a python program to implement constructor overriding
-
-8] Write a Python program to create a class to print the area of a square and a rectangle. The class has two methods with the same name but different number of parameters. The method for printing area of rectangle has two parameters which are length and breadth respectively while the other method for printing area of square has one parameter which is side of square.
-
-9] Write a Python program to create a class 'Degree' having a method 'getDegree' that prints "I got a degree". It has two subclasses namely 'Undergraduate' and Postgraduate' each having a method with the same name that prints "I am an Undergraduate" and "I am a Postgraduate" respectively. Call the method by creating an object of each of the three classes.
-
-10] Write Python program to read and print students information using single inheritance..
-
-11] Write a Python program to implement multiple inheritance.
-
-12] Write a Python program to implement multilevel inheritance.
-
-13] Write a Python program to create series from array using Panda.
-
-14] Write a Python program to create series from list using Panda.
-
-15] Write a Python program to access element of series using Panda.
-
-16] Write a Python program to create DataFrame using list or dictionary using Panda.
-
-17] Write GUI program to import Tkinter package and create a window and set its title.
-
-
-
+33. Write a Python program to perform following operations on set: intersection of sets, union of sets, set difference, symmetric difference, clear a set.
+34. Write a Python program to combine two dictionary adding values for common keys.
+	d1 = {'a': 100, 'b': 200, 'c':300}
+	d2 = {'a': 300, 'b': 200, 'd':400}
+	
+35. Write a Python program to find the highest 3 values in a dictionary.
+36. Write a Python function that takes a number as a parameter and check the number is prime or not
+37. Write a Python function to calculate the factorial of a number (a non-negative integer). The function accepts the number as an argument.
+38. Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+39. Write a program on  Function Argument in Python?
+40. Write a program on  keyword argument.
+41. Write a Python program to create a user defined module that will ask your college name and will display the name of the college.
+42. Write a Python program to define a module to find Fibonacci Numbers and import the module to  another program.
+43. Write a Python program to display calendar of given month using Calendar module.
+44. Write a python program to calculate area of circle using inbuilt Math module.
+45. Create your own package in Python
+46. Write a program on  constructor overloading in Python.
+47. Write a python program to implement constructor.
+48. Write a python program to implement parameterized constructor.
+49. Write a python program to implement constructor overriding
+50. Write a Python program to create a class to print the area of a square and a rectangle. The class has two methods with the same name but different number of parameters. The method for printing area of rectangle has two parameters which are length and breadth respectively while the other method for printing area of square has one parameter which is side of square.
+51. Write a Python program to create a class 'Degree' having a method 'getDegree' that prints "I got a degree". It has two subclasses namely 'Undergraduate' and Postgraduate' each having a method with the same name that prints "I am an Undergraduate" and "I am a Postgraduate" respectively. Call the method by creating an object of each of the three classes.
+52. Write Python program to read and print students information using single inheritance..
+53. Write a Python program to implement multiple inheritance.
+54. Write a Python program to implement multilevel inheritance.
+55. Write a Python program to create series from array using Panda.
+56. Write a Python program to create series from list using Panda.
+57. Write a Python program to access element of series using Panda.
+58. Write a Python program to create DataFrame using list or dictionary using Panda.
+59. Write GUI program to import Tkinter package and create a window and set its title.

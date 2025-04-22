@@ -12,19 +12,18 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 2rem auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #ffffff;
-    padding: 1rem;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
 }
 
 .questions-container {
@@ -37,46 +36,40 @@ h1 {
     background-color: #1e1e1e;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    transition: all 0.3s ease;
-    gap: 1rem;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: 1px solid #333;
 }
 
 .question-item:hover {
     transform: translateY(-2px);
-    border-color: #444;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-color: #3498db;
 }
 
 .question-text {
     flex: 1;
     font-size: 1.1rem;
-    line-height: 1.6;
-    padding-right: 1rem;
-    color: #e0e0e0;
+    margin-right: 1rem;
 }
 
 .copy-btn {
-    background-color: #2d3436;
-    color: #ffffff;
-    border: none;
+    background-color: #2c3e50;
+    color: white;
+    border: 1px solid #3498db;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s ease;
-    white-space: nowrap;
     min-width: 80px;
-    border: 1px solid #444;
 }
 
 .copy-btn:hover {
-    background-color: #3d4547;
-    transform: scale(1.05);
-    border-color: #555;
+    background-color: #34495e;
+    border-color: #2980b9;
 }
 
 .copy-btn.copied {
@@ -84,14 +77,23 @@ h1 {
     border-color: #2ecc71;
 }
 
-@media (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
     .question-item {
         flex-direction: column;
+        gap: 1rem;
         align-items: stretch;
     }
-    
+
     .copy-btn {
         width: 100%;
-        margin-top: 1rem;
     }
 } 
