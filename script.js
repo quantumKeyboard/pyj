@@ -1140,7 +1140,7 @@ data_dict = {
     'City': ['New York', 'London', 'Paris']
 }
 df2 = pd.DataFrame(data_dict)
-print("\nDataFrame from dictionary:")
+print("DataFrame from dictionary:")
 print(df2)`
     },
     {
